@@ -1,0 +1,229 @@
+* {
+        margin: 0;  // *是通配选择器  选择所有的标签
+        padding: 0;
+    }
+a{
+	text-decoration: none;
+}
+ul,li,ol{
+	list-style:none;
+}
+img,input,form,select,textarea{
+	vertical-align:middle;
+}
+body{
+	font-size:12px; width:980px; margin:0 auto; background:#e9eaee; 
+}
+.top{
+	background: #E5E9FF;
+	height: 63px;
+	width: 100%;
+	float:left;
+	display: flex;
+}
+.logo{
+	max-width: 80px;
+    height: 100%;
+    margin-right: 8px;
+}
+.nav{
+	width:auto; height:100%;
+}
+.nav ul li{
+	position: relative;
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+    height: 100%;
+    line-height: 44px;
+}
+.nav a{
+	font:14px/63px "微软雅黑";
+	color:#9E9AC5; padding:0px 20px; height:100%; display:block;
+}
+.nav a:hover{
+	color:#4E4A80;
+	background:#fff center bottom;
+	font-weight: bold;
+}
+
+.container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: border-box;
+    -ms-flex-align: start;
+    align-items: flex-start;
+
+    flex-direction: row;
+    width: 1000px;
+    padding: 0 16px;
+    margin: 10px auto;
+}
+.mainColumn{
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	margin-top: 10px;
+	margin-right: 10px;
+	margin-bottom: 0;
+	width: 694px;
+	font-size: 15px;
+}
+.mainColumnCard {
+	background: #ffffff;
+    -webkit-box-shadow: 0 1px 3px rgba(18,18,18,.1);
+    box-shadow: 0 1px 3px rgba(18,18,18,.1);
+}
+.askCard{
+	padding: 20px;
+    margin-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 1px solid #f0f2f7;
+
+}
+.askTitle{
+	font-size: 18px;
+    font-weight: 600;
+    font-synthesis: style;
+    line-height: 1.6;
+    color: #121212;
+    margin-top: -4px;
+    margin-bottom: -4px;
+}
+.detail {
+    cursor: pointer;
+    -webkit-transition: color .14s ease-out;
+    transition: color .14s ease-out;
+}
+.detailCover{
+    position: relative;
+    width: 190px;
+    height: 105px;
+    margin-top: -2px;
+    margin-right: 18px;
+    margin-bottom: 4px;
+    float: left;
+    overflow: hidden;
+    background-position: 50%;
+    background-size: cover;
+    border-radius: 4px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.detailCover-inner {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+.detailCover-inner img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+.detailContent{
+	margin-top: 16px;
+    margin-bottom: -4px;
+    overflow: hidden;
+}
+.detailActions{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 0 -20px -10px;
+    color: #646464;
+    background: #fff;
+    clear: both;
+}
+.toAnswer{
+	padding: 0 10px;
+    background: rgba(0,132,255,.1);
+    border-color: transparent;
+    color: #0084ff;
+}
+.toAnswer:hover{
+	background: rgba(0,132,255,.2);
+}
+.otherAnswer{
+	color:#8590a6;
+	background: none;
+	border:0px;
+}
+.Button {
+    display: inline-block;
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.rightBar{
+	margin-top: 10px;
+	margin-bottom: 0;
+	-webkit-box-flex: 1;
+    flex: 1 1;
+    font-size: 14px;
+}
+
+.Card {
+    margin-bottom: 10px;
+    background: #fff;
+    overflow: hidden;
+    border-radius: 2px;
+    -webkit-box-shadow: 0 1px 3px rgba(18,18,18,.1);
+    box-shadow: 0 1px 3px rgba(18,18,18,.1);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.navList{
+	width: 100%;
+    padding: 8px 0;
+}
+.rightBar-navLink{
+	display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0 20px;
+    height: 40px;
+    overflow: hidden;
+}
+
+.rightBar-navText {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1;
+    flex: 1 1;
+    margin: 0 10px;
+    text-align: left;
+    color:#8590a6;
+}
+.Button-Plain{
+    line-height: inherit;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+}
+.Button-Plain:hover{
+    line-height: inherit;
+    background-color: #E5E9FF40;
+    border: none;
+    border-radius: 0;
+}

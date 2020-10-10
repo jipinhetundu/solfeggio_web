@@ -1,0 +1,69 @@
+* {
+        margin: 0;  // *是通配选择器  选择所有的标签
+        padding: 0;
+    }
+a{
+	text-decoration: none;
+}
+ul,li,ol{
+	list-style:none;
+}
+img,input,form,select,textarea{
+	vertical-align:middle;
+}
+body{
+	font-size:12px; width:980px; margin:0 auto; background:#e9eaee; 
+}
+.top{
+	background: #E5E9FF;
+	height: 63px;
+	width: 100%;
+	float:left;
+	display: flex;
+}
+.logo{
+	max-width: 80px;
+    height: 100%;
+    margin-right: 8px;
+}
+.nav{
+	width:auto; height:100%;
+}
+.nav ul li{
+	position: relative;
+    display: inline-block;
+    list-style: none;
+    font-size: 14px;
+    height: 100%;
+    line-height: 44px;
+}
+.nav a{
+	font:14px/63px "微软雅黑";
+	color:#9E9AC5; padding:0px 20px; height:100%; display:block;
+}
+.nav a:hover{
+	color:#4E4A80;
+	background:#fff center bottom;
+	font-weight: bold;
+}
+.identity{
+	position: flex;
+	width: 565px;
+	height: 385px;
+	background:white;
+	border-radius: 5px;
+}
+#student{
+	position: flex;
+	width:270px;
+	height:365px;
+	margin-left: 10px;
+	margin-top:10px; 
+}
+#teacher{
+	position: flex;
+	width:270px;
+	height:365px;
+	margin-right: 10px; 
+	margin-top:10px; 
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <button type="button">导入学生选课列表</button> -->
+    <form action="http://127.0.0.1:7890/solfeggio/insert_stu_cour_by_excel" method="POST" enctype="multipart/form-data">
+        <input type="file" name="student_course_file">
+        <input type="submit">
+    </form>
+    <form action="http://127.0.0.1:7890/">
+        <input type="submit" value="刷新">
+    </form>
+    <!-- <table border="1">
+
+        <thead>
+            <tr>
+                <td>姓名</td>
+                <td>学号</td>
+                <td>班级号</td>
+                <td>专业</td>
+                <td>等级</td>
+                <td>开课学年</td>
+                <td>课程号</td>
+                <td>唯一序列码</td>
+            </tr>
+
+        </thead>
+    </table> -->
+    <div>
+        <div>
+            <div>
+                <div>
+                    <h3>Students</h3>
+                </div>
+                <div>
+                    <div>
+                        <table border="1">
+                            <thead>
+                            <tr>
+                                {% for i in labels %}
+                                    <td>{{ i }}</td>
+                                {% endfor %}
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for i in content %}
+                                <tr>
+                                    {% for j in i %}
+                                        <td>{{ j }}</td>
+                                    {% endfor %}
+                                    <td><a href="http://127.0.0.1:7890/solfeggio/html/student_info.html" >查看</a></td>
+                                    <td><a href="#" >删除</a></td>
+                                </tr>
+                            {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
+</body>
+</html>

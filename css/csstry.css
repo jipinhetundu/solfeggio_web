@@ -1,0 +1,13 @@
+.search{
+	font-size: 36px;
+	color:blue;
+	font-weight: bold;
+}
+p{
+	font-size: 36px;
+	color:red;
+	font-weight:lighter;
+}
+ul,li,ol{
+	list-style:none;
+}
